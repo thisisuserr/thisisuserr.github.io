@@ -32,6 +32,7 @@ function calculateScore() {
       break;
     }
   }
+  
 
   scoreResult.textContent = `${score}점을 맞으셨어요!`;
 }
