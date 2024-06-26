@@ -8,11 +8,32 @@
 </head>
 <body>
   <div class="container">
-    <h1>Problem 1. MEX</h1>
+    <h1>1. MEX</h1>
     <div class="input-container">
-      <label for="input-array">20개의 숫자 배열을 입력해주세요.</label>
-      <input type="text" id="input-array" placeholder="예시: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" size="80">
-      <button onclick="calculateScore()">채점하기</button>
+      <label for="input-array">배열을 입력해주세요.</label>
+      <div class="input-row">
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+        <input type="text" class="input-number" pattern="[0-9]{1,2}" maxlength="2" required>
+      </div>
+      <button onclick="calculateScore()">제출하기</button>
     </div>
     <div class="result-container">
       <p id="score-result"></p>
