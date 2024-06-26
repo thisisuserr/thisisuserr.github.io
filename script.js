@@ -1,19 +1,19 @@
 function calculateScore() {
-  const inputArray = document.getElementById('input-array').value.split(' ');
+  const inputNumbers = document.querySelectorAll('.input-number');
+  const arr = Array.from(inputNumbers).map(input => parseInt(input.value));
   const scoreResult = document.getElementById('score-result');
 
-  if (inputArray.length !== 20) {
-    scoreResult.textContent = '원소 개수가 맞지 않는 것 같아요!';
+  if (arr.length !== 20) {
+    scoreResult.textContent = '입력이 잘못된 것 같네요.. 혹시 값이 빠지지는 않았나요?';
     return;
   }
-
-  const arr = inputArray.map(Number);
-  let score = 0;
 
   if (arr.some(isNaN)) {
-    scoreResult.textContent = '숫자 말고 다른 게 들어간 것 같아요!';
+    scoreResult.textContent = '입력이 잘못된 것 같네요.. 숫자 말고 다른 값이 들어갔나요?';
     return;
   }
+
+  let score = 0;
 
   const exist = new Array(200).fill(0);
   for (let i = 0; i < 20; i++) {
@@ -33,5 +33,6 @@ function calculateScore() {
     }
   }
 
-  scoreResult.textContent = `${score}점이에요!`;
+  scoreResult.textContent = `${score}점을 맞으셨어요!`;
 }
+
