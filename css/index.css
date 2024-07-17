@@ -25,7 +25,7 @@ body {
 
 .item {
   width: 300px;
-  margin: 0 20px 0;
+  margin: 0 20px 20px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -58,10 +58,13 @@ body {
 }
 
 .ranking{
-  width: 300px;
-  margin: 0 20px;
-  background-color: #000;
-  border-radius: 4px;
+  width: 280px;
+  padding: 15px 0px 15px 0px;
+  margin: 0 10px 10px 10px;
+  background-color: #fafafa;
+  border-radius: 6px;
+  align-items: center;
+  text-align: left;
 }
 .ranking p1{
   margin: 20px;
@@ -74,10 +77,6 @@ body {
 .ranking p3{
   margin: 20px;
   color: #CD7F32;
-}
-.ranking p4{
-  margin: 20px;
-  color: #fff;
 }
 
 a{
