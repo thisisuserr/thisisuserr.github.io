@@ -1,0 +1,69 @@
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+
+body {
+  font-family: 'NanumSquare', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  width: 800px;
+}
+
+.game-container {
+  text-align: center;
+}
+#array-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.number-container {
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.number-container button {
+  text-align: center;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  color: #d0d0ff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+#reset-container {
+  margin-top: 20px;
+  align-items: center;
+}
+
+#reset-button {
+  border: none;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #8080f0;
+  color: #fff;
+  font-family: 'NanumSquare', Arial, sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
