@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4. 최대공약수</title>
+  <link rel = "shortcut icon" href = "https://i.ibb.co/3TMBXG5/fabicon.png">
+  <link rel="stylesheet" href="../../css/problems/problem4.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-container">
+      <iframe src="../../pdf/problem4.pdf" title="problem4" width="90%" height="300" frameborder="0"></iframe>
+      <div class="game-info">
+        <p>cost: <span id="cnt"></span></p>
+        <p><b>A: <span id="a-value"></span></b></p>
+        <p><b>B: <span id="b-value"></span></b></p>
+      </div>
+      <div class="button-container">
+        <button id="multiply-a" class="btn">A × 2</button>
+        <button id="divide-a" class="btn">A ÷ 2</button>
+        <button id="subtract-b" class="btn">A - B</button>
+        <button id="multiply-b" class="btn">B × 2</button>
+        <button id="divide-b" class="btn">B ÷ 2</button>
+        <button id="subtract-a" class="btn">B - A</button>
+      </div>
+      <div class="settings">
+        <button id="reset" class="btn">Reset</button>
+        <button id="cancel" class="btn">Cancel</button>
+      </div>
+    </div>
+    <div id="game-over-container" class="hidden">
+      <p><b>A: <span id="a-res"></span></b></p>
+      <p><b>B: <span id="b-res"></span></b></p>
+      <h2>축하합니다!</h2>
+      <p>연산 횟수: <span id="operation-count"></span></p>
+      <button id="play-again" class="btn">다시하기</button>
+    </div>
+  </div>
+  <script src="../../js/problems/problem4.js"></script>
+</body>
+</html>
